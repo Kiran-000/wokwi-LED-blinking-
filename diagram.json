@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Lagudu Bhanu kiran",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 192.6, "left": 76.2, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -195.6,
+      "left": -44.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -149.65,
+      "left": 249.6,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "uno:13", "r1:2", "green", [ "v-38.4", "h58" ] ],
+    [ "uno:GND.1", "led1:C", "black", [ "v-134.4", "h-220.5" ] ],
+    [ "r1:1", "led1:A", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
